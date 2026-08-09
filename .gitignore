@@ -2,6 +2,7 @@ notes/
 
 # Local development environment variables — never commit
 .env.local
+.env
 
 commands
 .vscode
