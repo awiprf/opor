@@ -1,0 +1,25 @@
+server:
+  port: ${SERVER_PORT:8081}
+
+spring:
+  application:
+    name: vec-verification-email-checker
+
+  # --- Connection values: same placeholders across all aut microservices ---
+  datasource:
+    url: ${AUT_DB_URL:jdbc:postgresql://localhost:5432/aut_db}
+    username: ${AUT_DB_USER:local_user}
+    password: ${AUT_DB_PASSWORD:local_pass}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  data:
+    redis:
+      host: ${AUT_REDIS_HOST:localhost}
+      port: ${AUT_REDIS_PORT:6379}
+      password: ${AUT_REDIS_PASSWORD:}

@@ -1,0 +1,11 @@
+# Development — verbose, auto-schema
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    com.opor: DEBUG
+    org.springframework.web: DEBUG

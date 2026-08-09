@@ -1,0 +1,12 @@
+#\src\svr\jsb\grd:
+# This is manual booting 
+
+1. Load .env first
+Get-Content .\svc\aut\.env.local | ForEach-Object {
+    if ($_ -match '^\s*([^#=]+)=(.+)$') {
+        [System.Environment]::SetEnvironmentVariable($matches[1].Trim(), $matches[2].Trim())
+    }
+}
+
+
+2. Start the Microservice

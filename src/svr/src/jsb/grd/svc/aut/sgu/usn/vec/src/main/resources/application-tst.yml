@@ -1,0 +1,11 @@
+# Testing — verbose SQL, auto-schema for test DB
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    com.opor: DEBUG
+    org.springframework.web: INFO

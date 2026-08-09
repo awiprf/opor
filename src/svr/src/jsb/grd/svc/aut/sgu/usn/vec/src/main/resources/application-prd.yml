@@ -1,0 +1,16 @@
+# Production — strict, minimal logging
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+
+  data:
+    redis:
+      ssl:
+        enabled: true
+
+logging:
+  level:
+    com.opor: WARN
+    org.springframework.web: WARN
