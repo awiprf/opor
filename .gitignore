@@ -10,3 +10,7 @@ commands
 .vscode
 notes
 agy
+
+# Gradle build artifacts and local caches
+.gradle/
+build/
