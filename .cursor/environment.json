@@ -1,0 +1,12 @@
+{
+  "name": "opor server (vec email checker)",
+  "install": "bash .cursor/install.sh",
+  "start": "bash .cursor/start.sh",
+  "terminals": [
+    {
+      "name": "vec",
+      "command": "bash .cursor/run-vec.sh"
+    }
+  ],
+  "ports": [8081]
+}
