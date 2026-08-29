@@ -12,3 +12,6 @@ notes
 agy
 
 keys
+# Gradle build artifacts and local caches
+.gradle/
+build/
